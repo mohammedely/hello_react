@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #e94560;
+  --color-primary-dark: #b6374d;
+  --color-primary-light: #ff7189;
+  --color-secondary: #533483;
+  --color-secondary-dark: #3e2660;
+  --color-secondary-light: #764fb0;
+  --color-bg: #16213e;
+  --color-bg-dark: #0b1121;
+  --color-text: #c2c7cc;
+  --color-text-dark: #e7eaed;
+}
+
+html {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-dark);
+}
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+select,
+input {
+  padding: 0.5rem;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text);
+  border: 1px solid var(--color-bg);
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border-color: var(--color-primary-dark);
+}
+
+.card {
+  background-color: var(--color-bg);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.544);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.employees {
+  max-width: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.employee__new {
+}
+.employee__new h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.employee__new form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.employee__new form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee__new form .btn {
+  margin-top: 0.5rem;
+}
+
+.employees__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.employee {
+  border: 1.5px dashed var(--color-text-dark);
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.employee small {
+  color: var(--color-text-dark);
+}
+
+.employee-primary {
+  border-color: var(--color-primary);
+}
+.employee-primary small {
+  color: var(--color-primary);
+}
+
+.employee-secondary {
+  border-color: var(--color-secondary);
+}
+
+.employee-secondary small {
+  color: var(--color-secondary);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
